@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Customer
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment10.params=
+comment10.target=void\ help()
+comment2.params=
+comment2.target=Customer()
+comment3.params=action
+comment3.target=double\ readAmount(java.lang.String)
+comment4.params=
+comment4.target=void\ deposit()
+comment5.params=
+comment5.target=void\ withdraw()
+comment6.params=
+comment6.target=void\ transfer()
+comment7.params=
+comment7.target=char\ readChoice()
+comment8.params=
+comment8.target=void\ menu()
+comment9.params=
+comment9.target=void\ view()
+numComments=11
