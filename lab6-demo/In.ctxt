@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=In
+comment0.text=\n\ This\ class\ provides\ static\ methods\ for\ easily\ reading\n\ input\ from\ STDIN\:\n\n\ nextLine\ reads\ a\ string\n\ nextInt\ reads\ an\ integer\n\ nextDouble\ reads\ a\ double\n\ nextChar\ reads\ a\ character\n\n\ All\ methods\ consume\ the\ end-of-line\ character.\n
+comment1.params=
+comment1.target=In()
+comment1.text=\n\ The\ constructor\ is\ private\ because\ no\ instances\ of\ this\n\ class\ should\ be\ created.\ All\ methods\ are\ static\ and\ can\n\ be\ directly\ invoked\ on\ the\ class\ itself.\n
+comment2.params=
+comment2.target=java.lang.String\ nextLine()
+comment2.text=\n\ Read\ the\ next\ line\ of\ text.\n\n\ @return\ the\ line\ as\ a\ String\n
+comment3.params=
+comment3.target=int\ nextInt()
+comment3.text=\n\ Read\ the\ next\ line\ as\ an\ integer.\n\n\ @return\ the\ integer\ that\ was\ read\n
+comment4.params=
+comment4.target=double\ nextDouble()
+comment4.text=\n\ Read\ the\ next\ line\ as\ a\ double.\n\n\ @return\ the\ double\ that\ was\ read\n
+comment5.params=
+comment5.target=char\ nextChar()
+comment5.text=\n\ Read\ the\ first\ character\ of\ the\ next\ line\ of\ text.\n\n\ @return\ the\ character\ that\ was\ read\n
+numComments=6

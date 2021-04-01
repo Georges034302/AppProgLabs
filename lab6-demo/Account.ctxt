@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Account
+comment1.params=type
+comment1.target=Account(java.lang.String)
+comment2.params=
+comment2.target=double\ readBalance()
+comment3.params=type
+comment3.target=boolean\ match(java.lang.String)
+comment4.params=amount
+comment4.target=boolean\ has(double)
+comment5.params=amount
+comment5.target=void\ deposit(double)
+comment6.params=amount
+comment6.target=void\ withdraw(double)
+comment7.params=amount\ target
+comment7.target=void\ transferTo(double,\ Account)
+comment8.params=
+comment8.target=java.lang.String\ toString()
+comment9.params=amount
+comment9.target=java.lang.String\ formatted(double)
+numComments=10
