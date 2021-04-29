@@ -1,0 +1,47 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 18, 2016, 1:54:45 PM
+    Author     : George
+*/
+.root{
+    -fx-background-color: #2a4c5a;
+}
+GridPane{
+    -fx-alignment: center;
+    -fx-padding:10; 
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+}
+
+Button {
+ -fx-background-color:
+        linear-gradient(#f0ff35, #a9ff00),
+        radial-gradient(center 50% -40%, radius 200%, #b8ee36 45%, #80c800 50%);
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+Label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f4f7f8;   
+}
+Text{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: #d5f04b;    
+}
+
+.class_text{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-fill: #ba1e2f; /*text fill color*/
+    -fx-text-fill: #ba1e2f; /*label fill color*/
+}
