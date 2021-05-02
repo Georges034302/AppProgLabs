@@ -1,0 +1,43 @@
+/* 
+    Created on : May 25, 2016, 1:57:11 PM
+    Author     : George
+*/
+.root {
+    -fx-display: block;   
+    -fx-background-color:#384868;
+    -fx-padding: 10px;
+    -fx-spacing: 20px; 
+    -fx-alignment: CENTER;
+}
+
+.heading {
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill:crimson;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+
+Button {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-color: black;
+}
+
+Button:hover {
+    -fx-text-fill: black;
+    -fx-background-color: yellow;
+    -fx-border-color: black;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#333 0%, #777 25%, #aaa 75%, #eee 100%);
+    -fx-text-fill: #b80004; 
+
+}
+.list-cell { -fx-text-fill: #00f;}
+.list-cell:odd { -fx-background-color: white;  }
+.list-cell:even { -fx-background-color: #8f8; }
+.list-cell:filled:hover { 
+    -fx-background-color: #00f; 
+    -fx-text-fill: white;  
+}

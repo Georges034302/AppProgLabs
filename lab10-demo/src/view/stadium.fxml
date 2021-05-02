@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="controller.StadiumController" xmlns:fx="http://javafx.com/fxml" prefHeight="400" prefWidth="400" styleClass="root">
+    
+    <ListView prefHeight="300" prefWidth="200" />  
+    <stylesheets>
+        <URL value="@stadium.css" />
+    </stylesheets>
+</VBox>
