@@ -5,7 +5,6 @@ import au.edu.uts.ap.javafx.*;
 import static javafx.application.Application.launch;
 import model.*;
 
-//public class StadiumApplication extends Application {
 public class StadiumApplication extends Application {
 
     public static void main(String[] args) {

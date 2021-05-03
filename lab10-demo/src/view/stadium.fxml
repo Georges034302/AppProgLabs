@@ -8,7 +8,10 @@
 
 <VBox fx:controller="controller.StadiumController" xmlns:fx="http://javafx.com/fxml" prefHeight="400" prefWidth="400" styleClass="root">
     
-    <ListView prefHeight="300" prefWidth="200" />  
+    <ListView fx:id="groupsLv" items="${controller.stadium.groups}" prefHeight="300" prefWidth="200" />  
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Open" fx:id="openBtn" onAction="#handleOpen"/>
+    </HBox>
     <stylesheets>
         <URL value="@stadium.css" />
     </stylesheets>
