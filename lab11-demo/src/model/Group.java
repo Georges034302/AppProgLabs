@@ -31,11 +31,12 @@ public class Group {
     public final int getLeft() { return left.get(); }
     public ReadOnlyIntegerProperty leftProperty() { return left; }
 
-    public boolean canSell(int number)  {    
+    public boolean canSell(int number)  throws CustomException{    
+        if(number > left.get()) throw new CustomException(number+" > "+left.get());
         return number <= left.get();
     }
 
-    public void sell(int number)  {     
+    public void sell(int number)  throws NumberFormatException{     
         sold.set(sold.get() + number);
     }
 

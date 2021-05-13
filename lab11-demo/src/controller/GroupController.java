@@ -31,21 +31,28 @@ public class GroupController extends Controller<Group> {
     private final void setAmount(int amount) {
         amountTf.setText("" + amount);
     }
-/*
+
+    /*
     @FXML
     private void initialize() {
         amountTf.textProperty().addListener((o, oldTxt, newTxt) ->
                  sellBtn.setDisable(!newTxt.matches("[0-9]{1,3}")));
     }
-*/
+     */
     @FXML
     private void handleSell(ActionEvent event) throws IOException {
-        
-        int amount = getAmount();
-        Group g = getGroup();
-        if (g.canSell(amount)) 
-            g.sell(amount);              
-            setAmount(0);        
+
+        try {
+            int amount = getAmount();
+            getGroup().canSell(amount);
+            getGroup().sell(amount);
+        } catch (CustomException | NumberFormatException ex) {
+            ViewLoader.showStage(ex, "/view/error.fxml", "Error", new Stage());
+        } finally {
+            // Always reset amount, even in the case of an error.
+            setAmount(0);
+        }
+
     }
-    
+
 }
