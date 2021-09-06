@@ -13,7 +13,7 @@ public class Customer {
     }
     //private Account savingsAccount;
     //private Account loanAccount;
-    private ArrayList<Account> accounts = new ArrayList();
+    private ArrayList<Account> accounts = new ArrayList<>();
 
     public Customer() {
         //savingsAccount = new Account("Savings");
@@ -29,7 +29,7 @@ public class Customer {
             case 'd': deposit(); break;
             case 'w': withdraw(); break;
             case 't': transfer(); break;
-            case 's': show(); break;
+            case 'v': view(); break;
             default: help(); break;
             }
         }
@@ -50,7 +50,7 @@ public class Customer {
     }
 
     private char readChoice() {
-        System.out.print("Customer menu (d/w/t/s/x): ");
+        System.out.print("Customer menu (d/w/t/v/x): ");
         return In.nextChar();
     }
 
@@ -100,7 +100,7 @@ public class Customer {
         return In.nextDouble();
     }
 
-    private void show() {
+    private void view() {
         // View all accounts:
         //
         // for (Account account : accounts)
@@ -120,7 +120,7 @@ public class Customer {
         System.out.println("d = deposit");
         System.out.println("w = withdraw");
         System.out.println("t = transfer");
-        System.out.println("s = show");
+        System.out.println("v = view");
         System.out.println("x = exit");
     }
 }
