@@ -1,0 +1,46 @@
+.root {
+    -fx-background-image: url("logo.jpg");
+    -fx-background-color: #042f66;
+    -fx-background-repeat: no-repeat;   
+    -fx-background-size: 60 60;
+    -fx-background-position: top right;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e6eaf1;
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+
+#welcome-text {
+    -fx-font-size: 32px;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #ffff99;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 6, 0.0 , 0 , 2 );
+}
+#actiontarget {
+    -fx-fill: #e07b39;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;     
+}
+
+.text-field, .password-field{
+    -fx-font-weight: bold;
+    -fx-min-width: 160px;
+}
+
+.button {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-pref-width: 80px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
