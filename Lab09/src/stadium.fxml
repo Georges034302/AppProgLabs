@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="StadiumController" 
+		xmlns:fx="http://javafx.com/fxml" 
+                alignment="center" hgap="10" vgap="10" >
+    <padding>
+        <Insets bottom="10" top="10" right="10" left="10"/>    
+    </padding>
+    <Label text="Seat Group" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <Text text="${controller.stadium.group.name}" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="class_text"/> 
+    <Label text="Capacity" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Text text="${controller.stadium.group.capacity}" GridPane.columnIndex="1" GridPane.rowIndex="1"/>  
+    <Label text="Price($)" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Text text="${controller.stadium.group.price}" GridPane.columnIndex="1" GridPane.rowIndex="2"/>   
+    <Label text="Sold" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <Text text="${controller.stadium.group.sold}" GridPane.columnIndex="1" GridPane.rowIndex="3"/>   
+    <Label text="Left" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Text text="${controller.stadium.group.left}" GridPane.columnIndex="1" GridPane.rowIndex="4"/> 
+    <Label text="Income($)" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <Text text="${controller.stadium.group.income}" GridPane.columnIndex="1" GridPane.rowIndex="5"/> 
+    <TextField fx:id="amountTf" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+    <HBox alignment="CENTER_RIGHT"  GridPane.columnIndex="1" GridPane.rowIndex="7">
+        <Button fx:id="sellBtn" text="Sell" onAction="#handleSell"/>
+    </HBox>   
+    <stylesheets>
+        <URL value="@stadium.css"/>
+    </stylesheets> 
+</GridPane>
+
+
+<!--
+***Change VBox to GridPane Layout:
+- add label "Seat Group" at (0,0)
+- add text = "${controller.stadium.group.name}" at (1,0)
+- add text = "Stock" at (0,1)
+- add text = "${controller.stadium.group.capacity}" at (1,1)
+- add text ="Sold" at (0,3)
+- add text = "${controller.stadium.group.sold}" at (1,3)
+- add text = "Left" at (0,4)
+- add text = "${controller.stadium.group.left}" at (1,4)
+- add text = "Income: ($)" at (0,5)
+- add text = "${controller.staidum.group.income}" at (1,5)
+- add text = "Sell" at (0,6)
+- add textfield with fx:id = "amountTf" with text="0" at (1,6)
+- add HBox with center_right alignment at (1,7)
+    -inside this HBox add button with fx:id="sellBtn" and text="Sell" and onAction activates "#handleSell"
+
+-->

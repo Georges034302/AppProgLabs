@@ -35,6 +35,11 @@ public class IncDec extends Application{
         HBox box = new HBox(10,label,field,minus,plus,clear);
         
         //Activate the leafs (or components)
+        //to activate a button we must:
+        /*
+         1- use setOnAction(ActionEvent)
+         2- do somthing about the event
+        */
         plus.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent event) {
