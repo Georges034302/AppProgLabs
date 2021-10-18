@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="controller.StadiumController"  
+      prefHeight="400" prefWidth="400"  styleClass="root"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <Text text="Stadium View"/> 
+    <ListView prefWidth="300" prefHeight="200" fx:id="groupsLv" items="${controller.stadium.groups}"/>
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Open" fx:id="openBtn" onAction="#handleOpen"/>
+    </HBox>
+    <stylesheets>
+        <URL value="@stadium.css"/>
+    </stylesheets>
+</VBox>

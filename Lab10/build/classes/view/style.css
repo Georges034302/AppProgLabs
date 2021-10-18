@@ -1,0 +1,16 @@
+.heading {
+	-fx-font-size: 32px;
+	-fx-fill: #818181;        
+}
+
+Button {
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-background-color: black;
+}
+
+Button:hover {
+	-fx-text-fill: black;
+	-fx-background-color: yellow;
+	-fx-border-color: black;
+}

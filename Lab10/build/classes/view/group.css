@@ -1,0 +1,33 @@
+GridPane{
+    -fx-background-color: #2A5058;
+}
+
+Label{
+    -fx-text-fill: #ff3333;
+    -fx-font-weight: bold;  
+    -fx-font-size: 16;
+}
+
+TextField{
+    -fx-background-color: #2A5058;
+    -fx-text-fill: #ffff00;
+}
+
+Text{
+    -fx-font-weight: bold;
+    -fx-fill: #ffff00;
+    -fx-font-size: 14;
+}
+
+Button {
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+	-fx-background-color: black;
+}
+
+Button:hover {
+	-fx-text-fill: black;
+	-fx-background-color: yellow;
+	-fx-border-color: black;
+}
+
