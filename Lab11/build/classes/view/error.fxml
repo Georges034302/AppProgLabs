@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fx:controller="controller.ErrorController"  xmlns:fx="http://javafx.com/fxml/1">
+    <Text text="An Error Occured" styleClass="heading"/>
+    <Text text="${controller.exception.message}" styleClass="dialog" />
+    <HBox alignment="CENTER">
+        <Button text="OK" onAction="#handleOK"/>
+    </HBox>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</VBox>

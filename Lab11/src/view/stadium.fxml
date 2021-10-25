@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?> 
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="controller.StadiumController" 
+		xmlns:fx="http://javafx.com/fxml" alignment="center"
+		>
+
+	<Text styleClass="heading" text="Stadium"/>
+	
+          <!--  
+           
+	<ListView fx:id="groupsLv" prefWidth="250" prefHeight="250" items="${controller.stadium.groups}"/>
+             -->  
+                      
+             <TableView fx:id="groupsTv" prefWidth="850"  prefHeight="200" items="${controller.stadium.groups}">
+		<columns>
+			<TableColumn text="Name" >
+				<cellValueFactory><PropertyValueFactory property="name"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Capacity">
+				<cellValueFactory><PropertyValueFactory property="capacity"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Price">
+				<cellValueFactory><PropertyValueFactory property="price"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Sold">
+				<cellValueFactory><PropertyValueFactory property="sold"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Income">
+				<cellValueFactory><PropertyValueFactory property="income"/></cellValueFactory>
+			</TableColumn>
+			<TableColumn text="Left">
+				<cellValueFactory><PropertyValueFactory property="left"/></cellValueFactory>
+			</TableColumn>
+		</columns>
+                         
+	</TableView>
+                
+           
+	<HBox alignment="center" spacing="10">
+		<Button fx:id="openBtn" text="Open" onAction="#handleOpen"/>
+	</HBox>
+
+	<stylesheets>
+		<URL value="@style.css"/>
+	</stylesheets>
+	
+</VBox>
